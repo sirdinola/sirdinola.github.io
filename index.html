@@ -7,12 +7,20 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: sans-serif; background: #1a1a1a; color: #eee; height: 100vh; display: flex; flex-direction: column; }
+    nav { background: #0d0d0d; border-bottom: 1px solid #444; display: flex; gap: 0.5rem; padding: 0.5rem 1rem; }
+    nav a { color: #ccc; text-decoration: none; padding: 0.4rem 1rem; border-radius: 4px; font-size: 0.9rem; border: 1px solid #444; }
+    nav a:hover { background: #2a2a2a; color: #fff; }
+    nav a.active { background: #333; color: #fff; border-color: #666; }
     header { padding: 1rem 1.5rem; background: #111; border-bottom: 1px solid #333; }
     header h1 { font-size: 1.1rem; font-weight: 600; }
     iframe { flex: 1; width: 100%; border: none; }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="/" class="active">Commission Info</a>
+    <a href="/prices">Prices</a>
+  </nav>
   <header>
     <h1>Commission Rules</h1>
   </header>
